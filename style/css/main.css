@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #E9E9E9;
+  stroke-width: 10;
+  stroke-linecap: round;
+  -webkit-box-shadow: inset 0px 10px 5px gold;
+          box-shadow: inset 0px 10px 5px gold;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+  stroke-dasharray: 430;
+  stroke-dashoffset: 50;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+  stroke: #8865C5;
+}
+
+.card .precent {
+  position: relative;
+}
+
+.card .number {
+  position: absolute;
+  top: 0;
+  right: 540px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.precent .number {
+  color: #6E5BB7;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.card:hover .precent .number {
+  color: #FD5F6A;
+  font-size: 30px;
+}
+
+.precent .number h2 span {
+  font-size: 15px;
+  color: #777777;
+}
+
+.card:hover .precent .number h2 span {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
